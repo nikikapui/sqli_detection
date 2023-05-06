@@ -79,6 +79,8 @@ print("SQLi_1.csv")
 df_train = pd.read_csv("payloads/SQLi_1/TF_IDF/train.csv")
 X_train = df_train.loc[:, df_train.columns != 'Label']
 
+
+#Change name of test dataset here
 df_test = pd.read_csv("payloads/united/TF_IDF/test.csv")
 X_test = df_test.loc[:, df_test.columns != 'Label']
 y_test = df_test['Label'] 
