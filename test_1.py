@@ -275,8 +275,8 @@ def framework(dataset, preprocessing, model):
     else: 
         print("Nincs ilyen modell!")
 
-dataset = "united"
-#dataset = ["united", "SQLi_1", "SQLi_2"]
+        
+dataset = ["united", "SQLi_1", "SQLi_2"]
 preprocessing = (PREPROC_TD_IDF, PREPROC_KEYWORD, PREPROC_SKIP_GRAM)
 models = (MODEL_LOGREG, MODEL_SVM, MODEL_RANDOM_FOREST, MODEL_GRAD_BOOST)
 
