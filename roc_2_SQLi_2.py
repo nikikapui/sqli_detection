@@ -107,6 +107,7 @@ auc_nn = roc_auc_score(y_test, test_pred_nn)
 df_train = pd.read_csv("payloads/SQLi_2/skip_gram/train.csv")
 X_train = df_train.loc[:, df_train.columns != 'Label']
 
+#Change name of test dataset here
 df_test = pd.read_csv("payloads/united/plain/test.csv")
 X_test = df_test.loc[:, df_test.columns != 'Label']
 y_test = df_test['Label']
